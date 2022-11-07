@@ -1,0 +1,77 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="phase0.android"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+8-->/Users/roxy/Desktop/cse216_rlg322/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->/Users/roxy/Desktop/cse216_rlg322/android/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/Users/roxy/Desktop/cse216_rlg322/android/app/src/main/AndroidManifest.xml:5:5-67
+11-->/Users/roxy/Desktop/cse216_rlg322/android/app/src/main/AndroidManifest.xml:5:22-64
+12
+13    <application
+13-->/Users/roxy/Desktop/cse216_rlg322/android/app/src/main/AndroidManifest.xml:7:5-35:19
+14        android:allowBackup="true"
+14-->/Users/roxy/Desktop/cse216_rlg322/android/app/src/main/AndroidManifest.xml:8:9-35
+15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+15-->[androidx.core:core:1.5.0] /Users/roxy/.gradle/caches/transforms-3/255d63c0f9f8f5d12ab3191ffb377750/transformed/core-1.5.0/AndroidManifest.xml:24:18-86
+16        android:debuggable="true"
+17        android:icon="@mipmap/ic_launcher"
+17-->/Users/roxy/Desktop/cse216_rlg322/android/app/src/main/AndroidManifest.xml:9:9-43
+18        android:label="@string/app_name"
+18-->/Users/roxy/Desktop/cse216_rlg322/android/app/src/main/AndroidManifest.xml:10:9-41
+19        android:roundIcon="@mipmap/ic_launcher_round"
+19-->/Users/roxy/Desktop/cse216_rlg322/android/app/src/main/AndroidManifest.xml:11:9-54
+20        android:supportsRtl="true"
+20-->/Users/roxy/Desktop/cse216_rlg322/android/app/src/main/AndroidManifest.xml:12:9-35
+21        android:testOnly="true"
+22        android:theme="@style/Theme.Phase0"
+22-->/Users/roxy/Desktop/cse216_rlg322/android/app/src/main/AndroidManifest.xml:13:9-44
+23        android:usesCleartextTraffic="true" >
+23-->/Users/roxy/Desktop/cse216_rlg322/android/app/src/main/AndroidManifest.xml:14:9-44
+24        <activity
+24-->/Users/roxy/Desktop/cse216_rlg322/android/app/src/main/AndroidManifest.xml:15:9-19:63
+25            android:name="phase0.android.SecondActivity"
+25-->/Users/roxy/Desktop/cse216_rlg322/android/app/src/main/AndroidManifest.xml:16:13-43
+26            android:exported="true"
+26-->/Users/roxy/Desktop/cse216_rlg322/android/app/src/main/AndroidManifest.xml:17:13-36
+27            android:label="@string/title_activity_second"
+27-->/Users/roxy/Desktop/cse216_rlg322/android/app/src/main/AndroidManifest.xml:18:13-58
+28            android:theme="@style/Theme.Phase0.NoActionBar" />
+28-->/Users/roxy/Desktop/cse216_rlg322/android/app/src/main/AndroidManifest.xml:19:13-60
+29        <activity
+29-->/Users/roxy/Desktop/cse216_rlg322/android/app/src/main/AndroidManifest.xml:20:9-30:20
+30            android:name="phase0.android.MainActivity"
+30-->/Users/roxy/Desktop/cse216_rlg322/android/app/src/main/AndroidManifest.xml:21:13-41
+31            android:exported="true"
+31-->/Users/roxy/Desktop/cse216_rlg322/android/app/src/main/AndroidManifest.xml:22:13-36
+32            android:label="@string/app_name"
+32-->/Users/roxy/Desktop/cse216_rlg322/android/app/src/main/AndroidManifest.xml:23:13-45
+33            android:theme="@style/Theme.Phase0.NoActionBar" >
+33-->/Users/roxy/Desktop/cse216_rlg322/android/app/src/main/AndroidManifest.xml:24:13-60
+34            <intent-filter>
+34-->/Users/roxy/Desktop/cse216_rlg322/android/app/src/main/AndroidManifest.xml:25:13-29:29
+35                <action android:name="android.intent.action.MAIN" />
+35-->/Users/roxy/Desktop/cse216_rlg322/android/app/src/main/AndroidManifest.xml:26:17-69
+35-->/Users/roxy/Desktop/cse216_rlg322/android/app/src/main/AndroidManifest.xml:26:25-66
+36
+37                <category android:name="android.intent.category.LAUNCHER" />
+37-->/Users/roxy/Desktop/cse216_rlg322/android/app/src/main/AndroidManifest.xml:28:17-77
+37-->/Users/roxy/Desktop/cse216_rlg322/android/app/src/main/AndroidManifest.xml:28:27-74
+38            </intent-filter>
+39        </activity>
+40
+41        <uses-library
+41-->/Users/roxy/Desktop/cse216_rlg322/android/app/src/main/AndroidManifest.xml:32:9-34:40
+42            android:name="org.apache.http.legacy"
+42-->/Users/roxy/Desktop/cse216_rlg322/android/app/src/main/AndroidManifest.xml:33:13-50
+43            android:required="false" />
+43-->/Users/roxy/Desktop/cse216_rlg322/android/app/src/main/AndroidManifest.xml:34:13-37
+44    </application>
+45
+46</manifest>
