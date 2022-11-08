@@ -1,0 +1,105 @@
+/* switch the default font for the body, and remove top/bottom/left/right margin */
+body {
+    font-family: "Times New Roman", Times, serif;
+    margin: 0;
+}
+
+/* font, color, and alignment for the titles of the three displayable regions */
+h3 {
+    background-color: #9f00d3;
+    font-size: 24pt;
+    font-weight: bold;
+    height: 42px;
+    text-align: center;
+}
+
+h1 {
+    background-color: #9f00d3;
+    color: #000000;
+    font-size: 14pt;
+    font-weight: bold;
+    height: 30px;
+    text-align: center;
+    top: 5px;
+}
+
+/* Make the button for adding a message hover in the top right */
+#showFormButton {
+    position: absolute;
+    top: 73px;
+    right: 10px;
+}
+
+/* Make the button for adding a message hover in the top right */
+#showProfButton {
+    position: absolute;
+    top: 73px;
+    right: 125px;
+}
+
+/* The main screen table should have some space to the left */
+#messageList {
+    margin-left: 15px;
+}
+
+/* The main screen table should have some space to the left */
+#commentList {
+    background-color: #9f00d3;
+    margin-left: 15px;
+}
+
+/* The main screen table should have some space to the left */
+#googlebut {
+    top: 100px;
+    margin-left: 30px;
+}
+
+/* The table should be wider than it absolutely needs to be */
+table {
+    width: 500px;
+}
+
+/* alternate color of table rows */
+/* tr:nth-child(1) {background: rgb(160, 160, 160)}
+tr:nth-child(2) {background: rgb(160, 160, 160)}
+tr:nth-child(3) {background: rgb(160, 160, 160)}
+tr:nth-child(4) {background: rgb(160, 160, 160)}
+tr:nth-child(5) {background: rgb(160, 160, 160)}
+
+tr:nth-child(6) {background: rgb(221, 115, 115)}
+tr:nth-child(7) {background: rgb(221, 115, 115)}
+tr:nth-child(8) {background: rgb(221, 115, 115)}
+tr:nth-child(9) {background: rgb(221, 115, 115)}
+tr:nth-child(10) {background: rgb(221, 115, 115)} */
+
+
+/* make table row height a bit bigger than necessary */
+tr {
+    height: 15px;
+}
+
+/* make the first column of the table wide 
+td:first-child {width: 75%;} */
+
+/* make the form elements wide, and force a line break after each */
+input, label, textarea {
+    display: block;
+    width: 200px;
+}
+
+/* put some space between textareas and the buttons that follow them */
+textarea {
+    margin-bottom: 5px;
+}
+
+/* put some left space before form elements */
+label, input, textarea, #addButton, #editButton {
+    margin-left: 15px;
+}
+
+/* custom formatting for the span where we put the creation date */
+#editCreated {
+    display: block;
+    margin-bottom: 5px;
+    margin-left: 15px;
+}

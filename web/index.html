@@ -1,0 +1,112 @@
+<html>
+
+<head>
+    <script src="jquery.min.js"></script>
+    <script src="app.js"></script>
+
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="866901746692-rf781eb45qt63ad1rk0oke2unhfrk6mq.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <link rel="stylesheet" href="app.css" />
+    <link href="https://fonts.googleapis.com/css?family=Fresca" rel="stylesheet">
+    <title>CSE216: Group #4 App</title>
+</head>
+
+<body>
+    <div id="showElements">
+        <h1>Roxy Gretz, Artem Maryanskyy, Caitlyn Wagner, Jacob Parr</h1>
+        <h3>All Messages</h3>
+        <button id="showFormButton">Add Message</button>
+        <button id="showProfButton">User Profile</button>
+        <div id="messageList"></div>
+        <div id="commentList"></div>
+    </div>
+
+    <div id="googlebut">
+        <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+        <script>
+            function onSignIn(googleUser) {
+            // Useful data for your client-side scripts:
+            var profile = googleUser.getBasicProfile();
+    
+            // The ID token you need to pass to your backend:
+            var id_token = googleUser.getAuthResponse().id_token;
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'https://young-springs-75062.herokuapp.com/auth/weblogin');
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            xhr.onload = function() {
+            console.log('Signed in as: ' + xhr.responseText);
+            };
+            xhr.send('uBackToken=' + id_token);
+            }
+        </script>
+
+        <a href="#" onclick="signOut();">Sign out</a>
+        <script>
+        function signOut() {
+            var auth2 = gapi.auth2.getAuthInstance();
+            auth2.signOut().then(function () {
+                
+            });
+        }
+        </script>
+    </div>
+
+    <div id="profile">
+        <h3>User Profile</h3>
+        <h2>Username: jhp222</h2>
+        <h2>Email: jhp222@lehigh.edu</h2>
+        <h2>Description:</h2>
+        <label>Description</label>
+        <input type="text" id="newDes" />
+        <button id="addButton">Update User Description</button>
+        <button id="addCancel">Cancel</button>
+    </div>
+
+    <div id="addElement">
+        <h3>Add a New Entry</h3>
+        <label>Title</label>
+        <input type="text" id="newTitle" />
+        <label>Message</label>
+        <textarea id="newMessage"></textarea>
+        <button id="addButton">Add</button>
+        <button id="addCancel">Cancel</button>
+    </div>
+
+
+    <div id="addComment">
+        <h3>Add a New Comment</h3>
+        <label>Comment</label>
+        <input type="text" id="newComment" />
+        <button id="addComButton">Add</button>
+        <button id="addComCancel">Cancel</button>
+    </div>
+    <div id="editComment">
+        <h3>Edit a Comment</h3>
+        <label>Comment</label>
+        <input type="text" id="editComment" />
+        <span id="editCreated"></span>
+        <input type="hidden" id="editId" />
+        <button id="editComButton">Update</button>
+        <button id="editComCancel">Cancel</button>
+    </div>
+
+
+    <div id="editElement">
+        <h3>Edit an Entry</h3>
+        <label>Title</label>
+        <input type="text" id="editTitle" />
+        <label>Message</label>
+        <textarea id="editMessage"></textarea>
+        <span id="editCreated"></span>
+        <input type="hidden" id="editId" />
+        <button id="editButton">Update</button>
+        <button id="editCancel">Cancel</button>
+    </div>
+
+
+</body>
+
+
+</html>
